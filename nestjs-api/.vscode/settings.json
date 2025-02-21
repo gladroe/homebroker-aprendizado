@@ -1,0 +1,141 @@
+{
+  // EDITOR SETTINGS
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.fontFamily": "'Jetbrains Mono', 'FiraCode Nerd Font', 'Hack Nerd Font', 'monospace'",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 1.7,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.smoothScrolling": true,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 4,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.wordWrap": "on",
+    "editor.guides.bracketPairs": "active",
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+    "editor.scrollbar.verticalScrollbarSize": 10,
+    "editor.copyWithSyntaxHighlighting": false,
+
+    // DIFF EDITOR SETTINGS
+    "diffEditor.ignoreTrimWhitespace": false,
+    
+    
+    // EXPLORER SETTINGS
+    "explorer.compactFolders": false,
+    "explorer.expandSingleFolderWorkspaces": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, package-lock*, bun.lock*",
+        "tailwind.config*": "tailwind.config*, postcss.config*",
+        ".env.local": ".env*",
+        ".env": ".env*",
+    },
+
+    // FILE SETTINGS
+    "files.autoSave": "off",
+    
+    // WINDOW SETTINGS
+    "window.titleBarStyle": "custom",
+    
+    // TERMINAL SETTINGS
+    "terminal.integrated.fontFamily": "'JetbrainsMono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'monospace'",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.7,
+    "terminal.integrated.cursorBlinking": true,
+    
+    // WORKSPACE SETTINGS
+    "workbench.colorTheme": "Min Dark",
+    "workbench.productIconTheme": "macos-modern",
+    "workbench.iconTheme": "symbols",
+    "workbench.editor.labelFormat": "short",
+
+    // SEMANTIC TOKEN SETTINGS
+    "editor.semanticTokenColorCustomizations": {
+      "enabled": true
+    },
+    
+    // COLOR CUSTOMIZATIONS
+    "workbench.colorCustomizations": { 
+
+     },
+
+    // BETTER COMMENTS SETTINGS
+    "better-comments.multilineComments": true,
+    "better-comments.highlightPlainText": false,
+
+      "better-comments.tags": [
+        {
+            "tag": "TODO:",
+            "color": "#EA580C",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "FIXME:",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "BUG:",
+            "color": "#9333EA",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "HACK:",
+            "color": "#C026D3",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "NOTE:",
+            "color": "#2563EB",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "INFO:",
+            "color": "#0EA5E9",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "IDEA:",
+            "color": "#FFF",
+            "strikethrough": false,
+            "backgroundColor": "#EAB308"
+        }
+    ],
+
+    // SPELL CHECK
+    "cSpell.language": "en,pt",
+    // "cSpell.enabledFileTypes": [
+
+    // ],
+
+    // PRISMA
+    "[prisma]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Prisma.prisma"
+    },
+    
+    // TYPESCRIPT
+    "typescript.suggest.autoImports": true,
+    "typescript.preferences.preferTypeOnlyAutoImports": true,
+    
+    // JAVASCRIPT
+    "javascript.suggest.autoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    // GIT
+    "git.enableSmartCommit": true,
+
+    
+
+}

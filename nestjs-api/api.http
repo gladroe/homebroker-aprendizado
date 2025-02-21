@@ -1,0 +1,97 @@
+###
+# @name createAsset
+POST http://localhost:3000/assets
+Content-Type: application/json
+
+[
+    {
+        "name": "Amazon",
+        "symbol": "AMZN",
+        "price": 61.76,
+        "image": "AMZN.png"
+    },
+    {
+        "name": "Salesforce",
+        "symbol": "CRM",
+        "price": 80.64,
+        "image": "CRM.png"
+    },
+    {
+        "name": "Google",
+        "symbol": "GOOGL",
+        "price": 86.15,
+        "image": "GOOGL.png"
+    },
+    {
+        "name": "Coca Cola",
+        "symbol": "KO",
+        "price": 67.89,
+        "image": "KO.png"
+    },
+    {
+        "name": "MCDonalds",
+        "symbol": "MCD",
+        "price": 86.92,
+        "image": "MCD.png"
+    },
+    {
+        "name": "Meta",
+        "symbol": "META",
+        "price": 686.67,
+        "image": "META.png"
+    },
+    {
+        "name": "Nvidia",
+        "symbol": "NVDA",
+        "price": 16.41,
+        "image": "NVDA.png"
+    }
+]
+
+
+###
+@assetId = {{ createAsset.response.body._id }}
+
+###
+GET http://localhost:3000/assets
+
+###
+GET http://localhost:3000/assets/A1
+
+###
+# @name createWallet
+POST http://localhost:3000/wallets
+
+###
+
+@walletId = {{ createWallet.response.body._id }}
+
+###
+GET http://localhost:3000/wallets
+
+###
+GET http://localhost:3000/wallets/bec9619a-bf6c-4a3d-aa62-97153bafabac
+
+###
+POST http://localhost:3000/wallets/{{ walletId }}/assets
+Content-Type: application/json
+
+{
+    "assetId": "{{ assetId }}",
+    "shares": 100
+}
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "walletId": "{{ walletId }}",
+    "assetId": "{{ assetId }}",
+    "shares": 10,
+    "price": 100,
+    "type": "BUY"
+}
+
+###
+GET http://localhost:3000/orders?walletId=6972dab6-24d0-4ddb-a742-5ad0ba304bea
